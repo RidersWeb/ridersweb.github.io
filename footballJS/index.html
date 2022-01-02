@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      margin: auto;
+    }
+   .container {
+     margin: auto;
+     margin-top: auto;
+     text-align: center;
+   }   
+    #field {
+      background-image: url('./img/field.jpg');
+      width: 600px;
+      height: 400px;
+      
+      margin: auto;
+      border: 5px solid black;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    #ball {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all .1s;
+    }
+    .score_board {
+      margin: auto;
+      margin-bottom: 10px;
+      width: 250px;
+      height: 150px;
+      background-image: url("img/scoreboard.png");
+      position: relative;
+    }
+    .score_board span {
+      position: absolute;
+      color: #fff;
+      font-size: 70px;
+      text-shadow: 1px 1px 1px #000;
+    }
+    #home {
+      top: 10px;
+      left: 80px;
+    }
+    #guest {
+      top: 10px;
+      left: 190px;
+    }
+
+  </style>
+</head>
+
+<body style="height:800px">
+  <div class="container">
+  <div class="score_board">
+    <span id="home">2</span>
+    <span id="guest">3</span>
+  </div>
+  <div id="field">
+    <img src="https://ru.js.cx/clipart/ball.svg" id="ball"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
